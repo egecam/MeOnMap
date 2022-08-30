@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		CDB67D4328BE2CAC000201DD /* MeOnMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB67D4228BE2CAC000201DD /* MeOnMapApp.swift */; };
-		CDB67D4528BE2CAC000201DD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB67D4428BE2CAC000201DD /* ContentView.swift */; };
+		CDB67D4528BE2CAC000201DD /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB67D4428BE2CAC000201DD /* MapView.swift */; };
 		CDB67D4728BE2CAD000201DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDB67D4628BE2CAD000201DD /* Assets.xcassets */; };
 		CDB67D4A28BE2CAD000201DD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDB67D4928BE2CAD000201DD /* Preview Assets.xcassets */; };
+		CDB67D5328BE2D10000201DD /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB67D5228BE2D10000201DD /* MapViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CDB67D3F28BE2CAC000201DD /* MeOnMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeOnMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDB67D4228BE2CAC000201DD /* MeOnMapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeOnMapApp.swift; sourceTree = "<group>"; };
-		CDB67D4428BE2CAC000201DD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CDB67D4428BE2CAC000201DD /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		CDB67D4628BE2CAD000201DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDB67D4928BE2CAD000201DD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CDB67D5228BE2D10000201DD /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,9 @@
 		CDB67D4128BE2CAC000201DD /* MeOnMap */ = {
 			isa = PBXGroup;
 			children = (
+				CDB67D5128BE2CF6000201DD /* Model */,
+				CDB67D5028BE2CEF000201DD /* View */,
 				CDB67D4228BE2CAC000201DD /* MeOnMapApp.swift */,
-				CDB67D4428BE2CAC000201DD /* ContentView.swift */,
 				CDB67D4628BE2CAD000201DD /* Assets.xcassets */,
 				CDB67D4828BE2CAD000201DD /* Preview Content */,
 			);
@@ -65,6 +68,22 @@
 				CDB67D4928BE2CAD000201DD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CDB67D5028BE2CEF000201DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CDB67D4428BE2CAC000201DD /* MapView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CDB67D5128BE2CF6000201DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CDB67D5228BE2D10000201DD /* MapViewModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +156,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDB67D4528BE2CAC000201DD /* ContentView.swift in Sources */,
+				CDB67D4528BE2CAC000201DD /* MapView.swift in Sources */,
 				CDB67D4328BE2CAC000201DD /* MeOnMapApp.swift in Sources */,
+				CDB67D5328BE2D10000201DD /* MapViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
